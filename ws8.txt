@@ -1,0 +1,45 @@
+Script started on 2021-10-29 03:26:01+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+alias l='ls -CF'
+bash: alias: =: not found
+bash: alias: ls -latr: not found
+bash: alias: w: not found
+bash: alias: =: not found
+bash: alias: ls -la | wc: not found
+]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ cd
+]0;kormanik@f6linuxA4: ~[01;32mkormanik@f6linuxA4[00m:[01;34m~[00m$ awk -F "\t" '($12 == "Y") {print $14}' amazon_reviews_us_Books_v1_02.tsv > ~/ws8/verified.txt
+]0;kormanik@f6linuxA4: ~[01;32mkormanik@f6linuxA4[00m:[01;34m~[00m$ awk -F "\t" '($12 == "N") {print $14}' amazon_reviews_us_Books_v1_02.tsv > ~/ws8/unverified.txt
+]0;kormanik@f6linuxA4: ~[01;32mkormanik@f6linuxA4[00m:[01;34m~[00m$ head -n 100 unverified.txt > unverified.short.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ws8
+]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ head -n 100 unverified.txt > unverified.short.txt[1Pverified.short.txt[1Pverified.short.txt[1P[1P
+]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ head -n 100 unverified.txt > unverified.short.txt
+]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ tr " " "\n" < verified.txt | sort | uniq -c | sort -nr| head -n 10[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstxt | sort | uniq -c | sort -nr[1@|[A]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chtxt | sort | uniq -c | sort -n[1@r[A]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cotxt | sort | uniq -c | sort -[1@n[A]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crtxt | sort | uniq -c | sort [1@-[A]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctxt | sort | uniq -c | sort[1@ [A]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.txt | sort | uniq -c | sor[1@t[A]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+    752 the
+    441 and
+    436 of
+    366 to
+    355 a
+    320 
+    261 is
+    227 in
+    198 I
+    166 that
+]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ tr " " "\n" < verified.short.txt | sort | uniq -c | sort -nr| head -n 10[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuverified.short.txt | sort | uniq -c | so[1@r[A]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnverified.short.txt | sort | uniq -c | s[1@o[A]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+    850 the
+    505 of
+    499 and
+    445 to
+    440 
+    382 a
+    310 is
+    256 in
+    232 that
+    210 I
+]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ historu[Ky > cmds.log
+]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ ls
+cmds.log              unverified.txt      verified.txt
+unverified.short.txt  verified.short.txt  ws8.txt
+]0;kormanik@f6linuxA4: ~/ws8[01;32mkormanik@f6linuxA4[00m:[01;34m~/ws8[00m$ tr " " "\n" < verified.short.txt | sort | uniq -c | sort -nr| head -n 10[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+
+Script done on 2021-10-29 03:30:22+00:00 [COMMAND_EXIT_CODE="0"]
